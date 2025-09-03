@@ -52,9 +52,9 @@ jobs:
       - name: Install Dependencies
         run: |
           if [ -f "requirements.txt" ]; then
-            uv pip install -r requirements.txt
+            uv pip install --system -r requirements.txt
           elif [ -f "pyproject.toml" ]; then
-            uv pip install -e .
+            uv pip install --system -e .
           else
             echo "No requirements file found"
             exit 1
