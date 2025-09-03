@@ -1,0 +1,10 @@
+[run]
+omit =
+    # omit anything in a .local directory anywhere
+    */journeyproj/*
+    */backend/migrations/*
+    # omit everything in /usr
+    .venv/*
+    # omit this single file
+    */manage.py
+    */backend/**/__init__.py
